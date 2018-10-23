@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal"
+    android:background="#F5F1D8"
+    >
+
+
+
+<Button
+    android:layout_width="190dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/agregar"
+    android:text="Agregar"
+    />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Eliminar"
+        android:text="Eliminar"
+        android:layout_gravity="right"
+        />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="415dp"
+            android:layout_height="500dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="50dp"
+            android:id="@+id/Padre"
+            android:orientation="vertical"
+            >
+        </LinearLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Ress"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Totales"
+        android:id="@+id/ct"
+        android:layout_below="@id/agregar"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="15dp"
+        android:onClick="onClickCtotales"
+        />
+
+
+
+
+</FrameLayout>
